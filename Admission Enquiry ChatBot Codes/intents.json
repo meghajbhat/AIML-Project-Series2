@@ -1,0 +1,222 @@
+//NAME : MEGHA BHAT
+//EMAIL : meghajbhat@gmail.com
+
+{
+  "intents":  
+[
+  {"tag": "greetings",
+  "patterns": ["hello","hey","hi","good day","Greetings","what's up?","how is it going?"],
+  "responses": ["Hello!","Hey!","What can I do for you?"]
+  },
+
+  {"tag": "name",
+  "patterns": ["what is your name","name","what's your name","who are you","what should I call you"],
+  "responses": ["You can call me Meg","I'm Meg, nice to meet you!","I'm Meg your virtual assistant"]
+  },
+
+  {"tag": "objectives",
+  "patterns": ["what are your objectives","more about your university","why ABC","what will be the outcomes","why is it good"],
+  "responses": ["Prepare and train students in theoretical foundations to work with cutting edge computing technologies and design solutions to complex engineering problems, making them ready to work in industrial environment. \nDevelop all round skills such as team building, inter-personal skills, and leadership qualities in order to effectively communicate with engineering community and with society at large. \nPromote research culture through internships, research assistantships, research-oriented projects, sponsored and collaborative research and enable them to pursue higher studies in computer science and related fields. \nTo inculcate social concern meeting the requirements of prospective employers and to develop an ability to innovate efficient computing solutions for a better society.\nCreate professionally superior and ethically strong globally competent employees and entrepreneurs."]
+  },
+
+  {"tag": "transportation",
+  "patterns": ["how can I get to the college","how can I reach the college","do you provide any tranportation service"],
+  "responses": ["You can reach the college by bus (BMTC will always be there), metro, or any other transportation. Additionally, we also provide bus service from Mysore Road Metro Station to our college every 15 minutes from 8am to 8:30am. "]
+  },
+
+  {"tag": "courses",
+  "patterns": ["what courses are available", "how many courses are there in this college"],
+  "responses": ["ABC University offers many BTech and MTech courses like CSE, AIML, EEE, BBA, Law, Architecture, etc... "],
+  "context_filter": "admissions"
+  },
+
+   {"tag": "courseDuration",
+  "patterns": ["how long will the courses be for", "how long will it take to complete the course"],
+  "responses": ["Depending on the course you choose, it can take anywhere between 3 to 5 years for Bachelors and 2-3 years for a Masters Degree. \nWhich course are you looking for?"]
+  },
+
+   {"tag": "CSECourse",
+    "patterns": ["BTech or MTech in CSE","BTech or MTech in EEE","BTech or MTech in AIML"],
+    "responses": ["BTech takes 4 years and MTech takes 2 years to complete. There are 2 semesters in each year."],
+    "context_filter": "admissions"
+  },
+
+   {"tag": "BBACourse",
+     "patterns": ["BBA Course","Law Course"],
+     "responses": ["BBA and Law courses takes 3 years to complete. There are 2 semesters in each year."],
+     "context_filter": "admissions"
+  },
+
+   {"tag": "Location",
+  "patterns": ["location","where is it located","what is the location of the college"],
+  "responses": ["ABC University main campus is located in Bangalore, Karnataka. More information is provided in our website."]
+  },
+
+  {"tag": "semesters",
+  "patterns": ["how many semesters are there in a year","how many semesters one should study in a year"],
+  "responses": ["There are two semesters in a year."]
+  },
+
+  {"tag": "deadlines",
+  "patterns": ["what is the deadline for admission form submission","when is the last date to submit the forms","by when should i submit the admission forms"],
+  "responses": ["The last date to submit the admission forms is 15th June 2024. Anything later than that will not be accepted."],
+  "context_filter": "admissions"
+  },
+
+  {"tag": "scholarships",
+  "patterns": ["Are there any scholarships available?","Do you offer scholarships?","What scholarships can I apply for?"],
+  "responses": ["Yes, we offer a variety of scholarships based on merit and financial need. You can visit our scholarship page for more details and application procedures."]
+  },
+      
+  {"tag": "application_process",
+  "patterns": ["How do I apply?","What is the application process?","Steps to apply for admission"],
+  "responses": ["You can apply online through our admissions portal. Fill out the application form, upload the required documents, and pay the application fee. Detailed instructions are available on our admissions page."],
+  "context_set": "admissions"
+  },
+  
+  {"tag": "documents_required",
+  "patterns": ["What documents are needed for admission?","Required documents for application","What should I submit with my application?"],
+  "responses": ["You will need to submit your high school transcripts, standardized test scores (if applicable), letters of recommendation, a personal statement, and proof of English proficiency. Additional documents may be required depending on the program."]
+  },
+      
+  {"tag": "hostels",
+  "patterns": ["Do you have on-campus housing?","What are the housing options?","Can I live on campus?"],
+  "responses": ["Yes, we offer on-campus housing for students. There are several dormitory options as well as meal plans. You can explore the housing section on our website for more details."]
+  },
+
+  {"tag": "campus_tour",
+  "patterns": ["Can I visit the campus?","Do you offer campus tours?","How can I schedule a campus tour?"],
+  "responses": ["Yes, we offer campus tours. You can schedule a visit through our website or contact our admissions office to arrange a tour. We look forward to showing you around!"]
+  },
+
+  {"tag": "financial_aid",
+  "patterns": ["Is financial aid available?","How can I apply for financial aid?","What financial aid options do you have?"],
+  "responses": ["We offer various financial aid options including grants, loans, and work-study programs. You can apply for financial aid by filling out the FAFSA form and submitting it by the priority deadline."]
+  },
+
+  {"tag": "international_students",
+  "patterns": ["Do you accept international students?","What are the requirements for international students?","How can an international student apply?"],
+  "responses": ["Yes, we welcome international students. You will need to submit your academic transcripts, proof of English proficiency (such as TOEFL or IELTS scores), and financial documents. Detailed information is available on our international admissions page."]
+  },
+
+  {"tag": "semDuration",
+  "patterns": ["how many months are there in a semester","how long will be a single semester"],
+  "responses": ["The single semester will be around 4 months."]
+  },
+
+  {"tag": "studentRequirements",
+  "patterns": ["what are the student requirements for admission","entry requirements","admission requirements"],
+  "responses": ["Academic Level\n minimum 85% in PCM subjects\n rank 50,000 or below in JEE Mains\n Students could also write our own ABCAT entrance exam for direct admissions."]
+  },
+
+  {"tag": "classes",
+  "patterns": ["how many classes will be there in a day","how long are the classes?","college timings"],
+  "responses": ["College start at 8:45am. End time depends upon the number of classes. Each class will be of 1 hour and 30 minutes."]
+  },
+
+  {"tag": "teachingStyle",
+  "patterns": ["what is the teaching style of this college?","Is the teaching pattern different from other college?","what is the teaching format?"],
+  "responses": ["ABC University is a deemed to be institution. We have our own ways of teaching, following the LTW techniques which stands for Lecture, Tutorial and Workshop. We provide with as much lab hours as possible for students to learn real time working on projects. \nYou can provide us with your contact details and our counselors shall reach out to you and provide you with further details."]
+  },
+
+  {"tag": "exams",
+  "patterns": ["what are the exams like?","What is the exam pattern"],
+  "responses": ["There are assignments which carry more weight than your written exams. The assignments have deadlines which you should not exceed if you want to get better marks. There are individual as well as group projects that the students are supposed to do which will fetch them more marks."]
+  },
+
+  {"tag": "hours",
+  "patterns": ["what are your hours","when are you guys open","what your hours of operation"],
+  "responses": ["You can message us here at any hours. But our college premises will be open from 7:00 am to 5:00 pm only."]
+  },
+
+  {"tag": "funActivities",
+  "patterns": ["will there be any extra curriculum activities?","does the college conducts any fun program"],
+  "responses": ["Yes, Of course. Our college not only provides excellent education but also encourage students to take part in different curriculum activities. The college conducts yearly programs like Sports meet, fests, educational talks and camps and what not. \n Also our college has a basketball court, badminton court, table tennis, chess, carrom board and many more refreshment zones."]
+  },
+
+  {"tag": "facilities",
+  "patterns": ["what facilities are provided by the college?","what are the facilities of college for students", "what are the college infrastructures "],
+  "responses": ["With excellent education facilities, Our College provides various other facilities like 24 hours internet, library, classes with AC, discusson room, canteens, parking space, and student service for any students queries."]
+  },
+
+  {"tag": "fee",
+  "patterns": ["how much is the college fee","what is the fee structure"],
+  "responses": ["Our fee structure depends upon many categories like the course you chose, and if you are joining our college through ABCAT Exam, KCET, JEE Mains/ Advance, MQT. \n Please feel free to reach out to us for more information."]
+  },
+
+  {"tag": "part_time_jobs",
+  "patterns": ["Are there part-time job opportunities?","Can I work part-time while studying?","What are the part-time job options?"],
+  "responses": ["Yes, students can find part-time job opportunities on campus and off campus. Our career services office can help you find a suitable part-time job that fits your schedule."]
+  },
+
+  {"tag": "internships",
+  "patterns": ["Do you offer internship programs?","How can I get an internship?","What internship opportunities are available?"],
+  "responses": ["We have strong industry connections and offer various internship programs to help students gain practical experience. You can apply for internships through our career services office or through our online internship portal."]
+  },
+
+  {"tag": "placement_support",
+  "patterns": ["What kind of placement support do you provide?","Do you help with job placements?","How can you assist with job placements?"],
+  "responses": ["Our career services office provides comprehensive placement support including resume writing, interview preparation, job fairs, and networking opportunities. We aim to help our students secure jobs in their chosen fields."]
+  },
+
+  {"tag": "academic_calendar",
+  "patterns": ["What is the academic calendar?","When do the semesters start?","Important dates in the academic calendar"],
+  "responses": ["The academic year is divided into two semesters: Fall and Spring. The Fall semester starts in late August and the Spring semester starts in January. For detailed dates, please refer to our academic calendar on the website."]
+  },
+
+  {"tag": "study_abroad",
+  "patterns": ["Do you have study abroad programs?","Can I study abroad?","What are the study abroad options?"],
+  "responses": ["Yes, we offer various study abroad programs in partnership with universities around the world. Students can spend a semester or a year abroad and earn credits towards their degree."]
+  },
+
+  {"tag": "cafeteria",
+  "patterns": ["Is there a cafeteria on campus?","What dining options are available?","Can I get meals on campus?"],
+  "responses": ["Yes, we have several cafeterias on campus that offer a variety of meals and snacks. There are also meal plans available for students who wish to dine regularly on campus."]
+  },
+
+  {"tag": "library_services",
+  "patterns": ["What library services are available?","Can I access the library?","Library facilities and services"],
+  "responses": ["Our library provides extensive resources including books, journals, e-books, study rooms, and computer access. Students can also access online databases and interlibrary loan services."]
+  },
+
+  {"tag": "medical_services",
+  "patterns": ["What medical services are available?","Is there a health center on campus?","Can I get medical assistance?"],
+  "responses": ["Our campus has a health center that provides medical services, including general consultations, first aid, and referrals to specialists. We also offer mental health counseling and wellness programs."]
+  },
+
+  {"tag": "alumni_network",
+  "patterns": ["What is the alumni network like?","How can I connect with alumni?","Alumni network and opportunities"],
+  "responses": ["Yes, we have a strong alumni network that provides mentoring, networking opportunities, and career support for current students and graduates. You can join the alumni association and participate in various events and programs."]
+  },
+
+  {"tag": "research_opportunities",
+  "patterns": ["Are there research opportunities?","Can I participate in research projects?","Research options for students"],
+  "responses": ["Students have numerous opportunities to engage in research across various disciplines. You can work with faculty on research projects, apply for research grants, and present your findings at conferences."]
+  },
+
+  {"tag": "student_support",
+  "patterns": ["What student support services are available?","How can you help students?","Student support and services"],
+  "responses": ["We offer a range of student support services including academic advising, tutoring, counseling, career services, and financial aid assistance. Our goal is to support your academic and personal success."]
+  },
+  
+  {"tag": "student_life",
+  "patterns": ["What is student life like?","Describe the student life on campus","Student life and activities"],
+  "responses": ["Student life is vibrant and diverse with various clubs, organizations, events, and activities. You can get involved in cultural, recreational, and social activities that enrich your college experience."]
+  },
+
+  {"tag": "goodbye",
+  "patterns": ["cya","See you later","Goodbye","I am leaving","Have a Good Day","bye","see ya"],
+  "responses": ["Sad to see you go :(","Talk you later","Goodbye"]
+  },
+
+  {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"]
+  }
+]
+}

@@ -1,0 +1,29 @@
+NAME : MEGHA BHAT
+EMAIL : meghajbhat@gmail.com
+
+nltk
+numpy
+tensorflow
+json
+pickle
+
+You can install these libraries using the following command:
+	pip install -r requirements.txt
+	
+You can install the libraries individually also:
+	1) nltk
+		pip install nltk
+
+	2) numpy
+		pip install numpy
+
+	3) tensorflow
+		pip install tensorflow
+
+	4) json
+		Included in Python standard library, no need to install separately
+		
+	5) pickle
+		Included in Python standard library, no need to install separately
+		
+Remember to run these commands in your terminal or command prompt with appropriate permissions.
